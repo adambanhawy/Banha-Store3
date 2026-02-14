@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanhaStore</title>
+    <link rel="shortcut icon" href="img/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    
+    <div class="center-title">
+        BanhaStore
+    </div>
+
+    <div class="logo">
+        <img src="img/images.png" alt="">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Pages/Contact.html">Contact us</a></li>
+        
+        <li>
+            <a href="#" onclick="toggleCart(); return false;" class="cart-btn">
+                🛒 Cart
+                <span id="cart-count" class="cart-badge">0</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+        <button>Search</button>
+    </div>
+
+    <div class="login-section">
+        <a href="Login.html" class="login-btn">
+            <img src="img/login.png" alt="Login">
+            <span>Login</span>
+        </a>
+    </div>
+</nav>
+<h2 class="Summer">New Summer Offers🌞</h2>
+<div class="products-container">
+    
+    
+<div class="BlueShirt">
+        <div class="img-cover"> <img src="img/BrownShirt.png" alt=""></div>
+        <h4>Basic Brown Sleeve for Men</h4>
+        <div>
+          <div class="offer"><h5>30%-</h5></div>  <span>445L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+
+
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/NewRedShirtMan2.jpg" alt=""></div>
+        <h4>Basic Red Shirt For Men</h4>
+        <div>
+           <div class="offer"><h5>30%-</h5></div> <span>350L.E</span>
+            <button>+</button>
+        </div>
+    </div>
+    
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/COLOURBOX40262920.jpg" alt=""></div>
+        <h4>Basic Blue Shirt for Men</h4>
+        <div>
+          <div class="offer"><h5>30%-</h5></div>  <span>350L.E</span>
+            <button>+</button>
+        </div>
+    </div>
+
+      <div class="BlueShirt">
+       <div class="img-cover"> <img src="img/BlackShirt.jpg" alt=""></div>
+        <h4>Basic Black Shirt for Men</h4>
+        <div>
+          <div class="offer"><h5>30%-</h5></div>  <span>375L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+    
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/SeaShirt.png" alt=""></div>
+        <h4>Sea shirt for men</h4>
+        <div>
+          <div class="offer"><h5>22%-</h5></div>  <span>550L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+
+
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/SummerTop.jfif" alt=""></div>
+        <h4>Blue top for women</h4>
+        <div>
+          <div class="offer"><h5>9%-</h5></div>  <span>600L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+
+
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/GreenWomenShirt.jpg" alt=""></div>
+        <h4>Army green casual T-shirt for Women</h4>
+        <div>
+          <div class="offer"><h5>32%-</h5></div>  <span>350L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+
+
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/BlackShirtWomenSummer.jpg" alt=""></div>
+        <h4>Black RoundNeck shirt for Women</h4>
+        <div>
+          <div class="offer"><h5>32%-</h5></div>  <span>350L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+
+    
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/GrayShirtWomen.jpg" alt=""></div>
+        <h4>OverSized Short Sleeve for Women</h4>
+        <div>
+          <div class="offer"><h5>32%-</h5></div>  <span>350L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+
+    
+    <div class="BlueShirt">
+        <div class="img-cover"> <img src="img/FaceColorShirtWomen.jpg" alt=""></div>
+        <h4>Cute Abstract Face Shirt for Women</h4>
+        <div>
+          <div class="offer"><h5>32%-</h5></div>  <span>350L.E</span>
+            <button>+</button>
+        </div>  
+    </div>
+
+
+</div>
+
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <span class="close-cart" onclick="toggleCart()">&times;</span>
+        </div>
+        
+        <div id="cart-items" class="cart-items">
+            
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total-section">
+                <strong>Total:</strong>
+                <span id="cart-total">0 L.E</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+</div>
+
+<script src="code.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BanhaStore</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>  
+    <div class="container">
+        <!-- Left Side - Login Form -->
+        <div class="left-side">
+            <div class="logo">
+                <img src="img/images.png" alt="Banha Logo">
+            </div>
+            
+            <h1>LOGIN</h1>
+            
+            <!-- Login Form -->
+            <form id="login-form">
+                <div class="input-container">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+                
+                <div class="input-container">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button type="button" class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button type="button" class="social-btn microsoft-btn">
+                        <i class="fab fa-microsoft"></i>
+                    </button>
+                </div>
+                
+                <button type="submit" class="login-btn">Login</button>
+                
+                <div class="form-footer">
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                    <p>Don't have an account? <a href="#" onclick="switchToSignup(); return false;">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Right Side - Image -->
+        <div class="right-side">
+            <img src="img/Clothes.jpg" alt="Fashion Clothes">
+            <div class="image-overlay">
+                <h2>Welcome Back!</h2>
+                <p>Shop the latest fashion trends</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeSignup()">&times;</span>
+            <div class="logo">
+                <img src="img/images.png" alt="Banha Logo">
+            </div>
+            <h2>CREATE ACCOUNT</h2>
+            
+            <form id="signup-form">
+                <div class="input-container">
+                    <input type="text" id="signup-name" placeholder="Full Name" required>
+                </div>
+                
+                <div class="input-container">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                </div>
+                
+                <div class="input-container">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                </div>
+                
+                <div class="input-container">
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+                </div>
+                
+                <div class="terms-checkbox">
+                    <label>
+                        <input type="checkbox" id="terms" required>
+                        I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="signup-btn">Sign Up</button>
+                
+                <p class="switch-text">Already have an account? <a href="#" onclick="closeSignup(); return false;">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
